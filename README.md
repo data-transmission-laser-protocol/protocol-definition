@@ -20,3 +20,8 @@ The first version of the protocol is a representation of binary data. Each laser
 | :---:        |    :----:   |          :---: |
 | HANDSHAKE_SIGNAL_DURATION | 100 | The duration of handshake signal in milliseconds. The handshake is one long signal sending before upcoming data transmission. Should be longer than one bit duration. It should be the same on both transmitter and receiver ends. |
 | BIT_DURATION | - | The duration of one bit in milliseconds and depends on the exact hardware. It should be the same on both transmitter and receiver ends. The ordinary digital photoresistor module can handle downt to 70ms per bit|
+
+
+# Upcoming Versions
+The upcoming 2nd version of the protcol will include speed optimization and ability to encrypt data before transmission and decrypt after receiving.
+The upcoming 3nd version of the protcol will wil TCP protcol - a data will be break down into chunks and sent by packets. Both transmitter and receiver will have a laser and photoresistor(diode), so when the first machine sends a data to the second, the second one will confirm incoming data and when all is done - will inform to get the next packet. BY that way there will not be transmitter/receiver machines, but a machine, which can transmit and receive. 
