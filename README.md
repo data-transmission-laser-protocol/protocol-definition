@@ -24,4 +24,5 @@ The first version of the protocol is a representation of binary data. Each laser
 
 # Upcoming Versions
 The upcoming 2nd version of the protcol will include speed optimization and ability to encrypt data before transmission and decrypt after receiving.
+
 The upcoming 3nd version of the protcol will wil TCP protcol - a data will be break down into chunks and sent by packets. Both transmitter and receiver will have a laser and photoresistor(diode), so when the first machine sends a data to the second, the second one will confirm incoming data and when all is done - will inform to get the next packet. BY that way there will not be transmitter/receiver machines, but a machine, which can transmit and receive. 
