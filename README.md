@@ -18,6 +18,6 @@ The first version of the protocol is a representation of binary data. Each laser
 
 | Property    | Standardized value | Description |
 | :---:        |    :----:   |          :---: |
-| HANDSHAKE_SIGNAL_DURATION | 100 | The duration of handshake signal in microseconds. The handshake is one long signal sending before upcoming data transmission. Should be longer than one bit duration. It should be the same on both transmitter and receiver ends. |
-| BIT_DURATION | - | The duration of one bit in macroseconds and depends on the exact hardware. It should be the same on both transmitter and receiver ends. |
+| HANDSHAKE_SIGNAL_DURATION | 100 | The duration of handshake signal in milliseconds. The handshake is one long signal sending before upcoming data transmission. Should be longer than one bit duration. It should be the same on both transmitter and receiver ends. |
+| BIT_DURATION | - | The duration of one bit in microseconds and depends on the exact hardware. It should be the same on both transmitter and receiver ends. |
 
