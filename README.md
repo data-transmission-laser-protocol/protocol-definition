@@ -25,7 +25,11 @@ The first version of the protocol is a representation of binary data. Each laser
 # Upcoming Versions
 The upcoming 2nd version of the protcol will include speed optimization and ability to encrypt data before transmission and decrypt after receiving.
 
-The upcoming 3nd version of the protcol will wil TCP protcol - a data will be break down into chunks and sent by packets. Both transmitter and receiver will have a laser and photoresistor(diode), so when the first machine sends a data to the second, the second one will confirm incoming data and when all is done - will inform to get the next packet. BY that way there will not be transmitter/receiver machines, but a machine, which can transmit and receive. 
+The upcoming 3rd version will involve 8 transmitters and 8 receivers. Each laser and receiver will represent a bit. By that way in one bit period (BIT_DURATION) the transmitter will be able to send a whole byte and the receiver will be able to receive it. x8 for speed.
+
+The upcoming 4th version will include the following: 8 lasers for 1 and 8 lasers for 0 bits for the transmitter; 8 photodiodes for 1 and 8 photodiodes for 0 bits for the receiver. That's it 16 lasers for a transmitter and 16 photodiodes for receiver. By that way there will be implemented PDT([parallel data transmission](https://en.wikipedia.org/wiki/Parallel_communication)). x2 for speed.
+
+The upcoming 5th version of the protcol will be like TCP protcol - a data will be break down into chunks and sent by packets. Both transmitter and receiver will have a laser and photoresistor(diode), so when the first machine sends a data to the second, the second one will confirm incoming data and when all is done - will inform to get the next packet. By that way there will not be transmitter/receiver machines, but a machine, which can transmit and receive. 
 
 ### Licence 
 This software is under the CC BY-NC-ND 4.0 licence. For more info see: https://github.com/data-transmission-laser-protocol/protocol-definition/blob/main/LICENCE
