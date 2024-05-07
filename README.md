@@ -25,6 +25,13 @@ The first version of the protocol is a representation of binary data. Each laser
 The same DTLP 1 but with encryption and decryption of data. The encryption should be sync and use one key for encrypting and decrypting. The Encryption algorithm is depending on the exact situation and solution and will not be defined here.
 By encryption and decryption of data, in case of [MITM attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) the potential 3rd party transmitter of an attacker will not be able to send a wrong data, because the receiver will try to decrypt the incoming payload and it'll not be able to process the data since there will be an error of decrypting the data. So the encryption of the data solves two potential issues: be sure the transmitter is known transmitter; be sure that the data is not processed by MITM attack.
 
+##### Properties
+
+| Property    | Standardized value | Description |
+| :---:        |    :----:   |          :---: |
+| ENCRYPTION_KEY | - | The key to encrypt and decrypt. Since the hardware working with this protocol may have limited resources it's decided to have a sync encryption algorithms - with a single key for encryption and decryption |
+
+
 
 # Upcoming Versions
 - The upcoming 3rd version will involve 8 transmitters and 8 receivers. Each laser and receiver will represent a bit. By that way in one bit period (BIT_DURATION) the transmitter will be able to send a whole byte and the receiver will be able to receive it. x8 for speed.
