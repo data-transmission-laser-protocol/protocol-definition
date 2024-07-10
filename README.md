@@ -5,8 +5,6 @@ This document defines the correct way of syncronized work between two modules - 
 
 The versioning of the protocol shows the major changes and has only one segment, i.e. X, while the protocol software implementation can have semantic versioning, i.e. X.Y.Z. where X is a major version (The version of implemented protocol), Y is a minor version showing software feature updates and Z is a patch version, showing software bugfixes.
 
-# Protocol Versions
-
 ## DTLP 2
 The same DTLP 1 but with encryption and decryption of data. The encryption should be sync and use one key for encrypting and decrypting. The Encryption algorithm is depending on the exact situation and solution and will not be defined here.
 By encryption and decryption of data, in case of [MITM attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) the potential 3rd party transmitter of an attacker will not be able to send a wrong data, because the receiver will try to decrypt the incoming payload and it'll not be able to process the data since there will be an error of decrypting the data. So the encryption of the data solves two potential issues: be sure the transmitter is known transmitter; be sure that the data is not processed by MITM attack.
